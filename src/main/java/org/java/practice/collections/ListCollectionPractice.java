@@ -1,9 +1,6 @@
 package org.java.practice.collections;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-import java.util.Vector;
+import java.util.*;
 
 //Practice class to try out different collections in Java.
 public class CollectionPractice {
@@ -24,16 +21,37 @@ public class CollectionPractice {
         ls3.add("sta1");
 
         ArrayList<Integer> arr = new ArrayList<>();
-        Vector<String> vec = new Vector<>();
+        LinkedList<Integer> lnkList = new LinkedList<>();
+        Vector<Integer> vec = new Vector<>();
         Stack<String> sta = new Stack<>();
 
         //ArrayList simple implementation
         for (int i = 0; i < 5; i++) {
             arr.add(i);
+            lnkList.add(i);
+            vec.add(i+1);
         }
+        System.out.println("Array List data");
         System.out.println(arr);
         arr.remove(3);
         System.out.println(arr);
 
+        System.out.println("Linked List data");
+        System.out.println(lnkList);
+        lnkList.remove(2);
+        System.out.println(lnkList);
+
+        System.out.println("");
+        System.out.println(vec);
+        vec.remove(1);
+        System.out.println(vec);
+
+        sta.push("Geeks");
+        sta.push("for");
+        sta.push("Geeks");
+        sta.push("Geeks");
+        System.out.println(sta);
+        sta.pop();
+        System.out.println(sta);
     }
 }
