@@ -4,7 +4,6 @@ import java.util.*;
 
 public class CollectionDemo {
     public static void main(String[] args) {
-        int[] a = new int[]{1,2,3,4};
         Vector<String> v = new Vector<>(0);
         Hashtable<Integer, String> h = new Hashtable<>(0);
 
